@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Flow for Her - Get in touch to collaborate or learn more">
+    <title>Contact Us - Flow for Her</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Text:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">Flow for Her</a>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="research.html" class="nav-link">Research</a></li>
+                    <li><a href="curriculum.html" class="nav-link">Curriculum</a></li>
+                    <li><a href="resources.html" class="nav-link">Resources</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Get in Touch</h1>
+            <p class="page-subtitle">Have questions? Want to collaborate? We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title" style="text-align: left;">Let's Work Together</h2>
+                    <p>
+                        Have questions about our research? Want to collaborate? Need custom educational materials for your community? We'd love to hear from you.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:info@breakingbarriers.org">info@breakingbarriers.org</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🌍</span>
+                            <div>
+                                <h4>Follow Us</h4>
+                                <p>Social media links coming soon</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">💼</span>
+                            <div>
+                                <h4>Partnerships</h4>
+                                <p>We welcome collaborations with schools, NGOs, and community organizations</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 40px; padding: 30px; background: var(--bg-light); border-radius: 15px;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 15px;">Response Time</h3>
+                        <p style="color: var(--text-light); line-height: 1.7;">
+                            We typically respond to inquiries within 2-3 business days. For urgent matters, please indicate "URGENT" in your subject line.
+                        </p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic...</option>
+                            <option value="research">Research Inquiry</option>
+                            <option value="curriculum">Curriculum Request</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="volunteer">Volunteer</option>
+                            <option value="media">Media Inquiry</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ways to Get Involved -->
+    <section class="mission">
+        <div class="container">
+            <h2 class="section-title">Ways to Get Involved</h2>
+            <div class="impact-grid" style="margin-top: 50px;">
+                <div class="impact-card">
+                    <h3>🎓 Educators</h3>
+                    <p>Use our curriculum in your classroom and share feedback to help us improve our materials.</p>
+                </div>
+                <div class="impact-card">
+                    <h3>🔬 Researchers</h3>
+                    <p>Collaborate on studies, share data, or contribute articles to our research library.</p>
+                </div>
+                <div class="impact-card">
+                    <h3>🤝 Organizations</h3>
+                    <p>Partner with us to implement menstrual health programs in your community or region.</p>
+                </div>
+                <div class="impact-card">
+                    <h3>💪 Volunteers</h3>
+                    <p>Help with content creation, translations, community outreach, and more.</p>
+                </div>
+                <div class="impact-card">
+                    <h3>📰 Media</h3>
+                    <p>Cover our work, interview our team, or request statistics and information for articles.</p>
+                </div>
+                <div class="impact-card">
+                    <h3>💰 Supporters</h3>
+                    <p>Help fund our research, curriculum development, and distribution of educational materials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="approach-grid" style="margin-top: 50px;">
+                <div class="approach-card">
+                    <h3>Can I use your materials for my organization?</h3>
+                    <p>Yes! Our educational materials are freely available for non-commercial educational and advocacy purposes. Please provide attribution when using our content.</p>
+                </div>
+                
+                <div class="approach-card">
+                    <h3>How can I translate materials into my language?</h3>
+                    <p>We welcome translations! Please contact us to discuss the process and ensure consistency with our educational objectives.</p>
+                </div>
+                
+                <div class="approach-card">
+                    <h3>Do you provide in-person training?</h3>
+                    <p>We can connect you with partner organizations that provide in-person training. Contact us to discuss your specific needs and location.</p>
+                </div>
+                
+                <div class="approach-card">
+                    <h3>How can I contribute to your research?</h3>
+                    <p>We welcome research collaborations. Please reach out with details about your work, methodology, and how you'd like to contribute.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Flow for Her</h3>
+                    <p>Empowering girls through menstrual health education and advocacy.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="curriculum.html">Curriculum</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Copyright</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Donate</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Flow for Her. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
