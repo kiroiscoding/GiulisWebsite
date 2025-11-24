@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Learn about Flow for Her and our mission to support menstrual health education">
     <title>About Us - Flow for Her</title>
+    <link rel="icon" type="image/png" href="Images/faviconFlowForHer.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,13 +30,19 @@
                     <span></span>
                 </button>
                 <ul class="nav-links" id="nav-links">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link active">About</a></li>
-                    <li><a href="research.html" class="nav-link">Research</a></li>
-                    <li><a href="curriculum.html" class="nav-link">Curriculum</a></li>
-                    <li><a href="resources.html" class="nav-link">Resources</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="index.html" class="nav-link" data-translate="nav.home">Home</a></li>
+                    <li><a href="about.html" class="nav-link active" data-translate="nav.about">About</a></li>
+                    <li><a href="research.html" class="nav-link" data-translate="nav.research">Research</a></li>
+                    <li><a href="curriculum.html" class="nav-link" data-translate="nav.curriculum">Curriculum</a></li>
+                    <li><a href="resources.html" class="nav-link" data-translate="nav.resources">Resources</a></li>
+                    <li><a href="contact.html" class="nav-link" data-translate="nav.contact">Contact</a></li>
                 </ul>
+                <div class="language-toggle">
+                    <div class="lang-btn" id="lang-toggle">
+                        <button class="lang-option active" data-lang="en" onclick="setLanguage('en')">EN</button>
+                        <button class="lang-option" data-lang="ar" onclick="setLanguage('ar')">AR</button>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -44,8 +51,9 @@
     <section class="page-header">
         <div class="page-header-overlay"></div>
         <div class="container">
-            <h1 class="page-title">About Flow for Her</h1>
-            <p class="page-subtitle">Understanding the challenges and our mission to create change</p>
+            <h1 class="page-title" data-translate="about.title">About Flow for Her</h1>
+            <p class="page-subtitle" data-translate="about.subtitle">Understanding the challenges and our mission to
+                create change</p>
         </div>
     </section>
 
@@ -54,40 +62,44 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2 class="section-title">The Reality</h2>
-                    <p>
-                        In many developing countries, menstruation is shrouded in stigma and silence. Girls often lack
-                        access to:
-                    </p>
+                    <h2 class="section-title" data-translate="about.reality.title">The Reality</h2>
+                    <h3 class="reality-intro" data-translate="about.reality.intro">
+                        Girls often lack access to:
+                    </h3>
                     <ul class="challenge-list">
                         <li>
                             <div class="challenge-icon"><i class="fas fa-book"></i></div>
                             <div class="challenge-text">
-                                <h3>Education & Information</h3>
-                                <p>Many girls receive little to no education about menstruation before their first
+                                <h3 data-translate="about.reality.challenges.education.title">Education & Information
+                                </h3>
+                                <p data-translate="about.reality.challenges.education.desc">Many girls receive little to
+                                    no education about menstruation before their first
                                     period, leading to fear and confusion.</p>
                             </div>
                         </li>
                         <li>
                             <div class="challenge-icon"><i class="fas fa-pills"></i></div>
                             <div class="challenge-text">
-                                <h3>Hygiene Products</h3>
-                                <p>Access to affordable sanitary products is limited, forcing girls to use unsafe
+                                <h3 data-translate="about.reality.challenges.products.title">Hygiene Products</h3>
+                                <p data-translate="about.reality.challenges.products.desc">Access to affordable sanitary
+                                    products is limited, forcing girls to use unsafe
                                     alternatives.</p>
                             </div>
                         </li>
                         <li>
                             <div class="challenge-icon"><i class="fas fa-restroom"></i></div>
                             <div class="challenge-text">
-                                <h3>Proper Facilities</h3>
-                                <p>Schools often lack private, clean bathrooms with water and disposal systems.</p>
+                                <h3 data-translate="about.reality.challenges.facilities.title">Proper Facilities</h3>
+                                <p data-translate="about.reality.challenges.facilities.desc">Schools often lack private,
+                                    clean bathrooms with water and disposal systems.</p>
                             </div>
                         </li>
                         <li>
                             <div class="challenge-icon"><i class="fas fa-comments"></i></div>
                             <div class="challenge-text">
-                                <h3>Open Discussion</h3>
-                                <p>Cultural taboos prevent open conversation, perpetuating myths and shame.</p>
+                                <h3 data-translate="about.reality.challenges.discussion.title">Open Discussion</h3>
+                                <p data-translate="about.reality.challenges.discussion.desc">Cultural taboos prevent
+                                    open conversation, perpetuating myths and shame.</p>
                             </div>
                         </li>
                     </ul>
@@ -99,26 +111,34 @@
     <!-- Impact Section -->
     <section class="mission">
         <div class="container">
-            <h2 class="section-title">The Impact</h2>
+            <h2 class="section-title" data-translate="about.impact.title">The Impact</h2>
             <div class="impact-grid">
                 <div class="impact-card">
-                    <h3><i class="fas fa-graduation-cap"></i> Education Disrupted</h3>
-                    <p>Girls miss an average of 4-5 days of school per month, resulting in nearly 50 days of lost
+                    <h3><i class="fas fa-graduation-cap"></i> <span
+                            data-translate="about.impact.education.title">Education Disrupted</span></h3>
+                    <p data-translate="about.impact.education.desc">Girls miss an average of 4-5 days of school per
+                        month, resulting in nearly 50 days of lost
                         education annually—equivalent to missing an entire academic quarter.</p>
                 </div>
                 <div class="impact-card">
-                    <h3><i class="fas fa-heart-broken"></i> Confidence Shattered</h3>
-                    <p>The shame and stigma surrounding menstruation damages girls' self-esteem and mental health,
+                    <h3><i class="fas fa-heart-broken"></i> <span
+                            data-translate="about.impact.confidence.title">Confidence Shattered</span></h3>
+                    <p data-translate="about.impact.confidence.desc">The shame and stigma surrounding menstruation
+                        damages girls' self-esteem and mental health,
                         affecting their overall well-being.</p>
                 </div>
                 <div class="impact-card">
-                    <h3><i class="fas fa-ban"></i> Opportunities Limited</h3>
-                    <p>Educational setbacks lead to higher dropout rates, limiting career opportunities and perpetuating
+                    <h3><i class="fas fa-ban"></i> <span data-translate="about.impact.opportunities.title">Opportunities
+                            Limited</span></h3>
+                    <p data-translate="about.impact.opportunities.desc">Educational setbacks lead to higher dropout
+                        rates, limiting career opportunities and perpetuating
                         cycles of poverty.</p>
                 </div>
                 <div class="impact-card">
-                    <h3><i class="fas fa-heartbeat"></i> Health at Risk</h3>
-                    <p>Inadequate menstrual hygiene management leads to infections and health complications that could
+                    <h3><i class="fas fa-heartbeat"></i> <span data-translate="about.impact.health.title">Health at
+                            Risk</span></h3>
+                    <p data-translate="about.impact.health.desc">Inadequate menstrual hygiene management leads to
+                        infections and health complications that could
                         be easily prevented.</p>
                 </div>
             </div>
@@ -128,9 +148,10 @@
     <!-- Vision Section -->
     <section class="stats">
         <div class="container">
-            <h2 class="section-title" style="color: white; margin-bottom: 30px;">Our Vision</h2>
-            <p
-                style="color: rgba(255,255,255,0.95); font-size: 1.2rem; line-height: 1.8; max-width: 800px; margin: 0 auto; text-align: center;">
+            <h2 class="section-title" style="color: white; margin-bottom: 30px;" data-translate="about.vision.title">Our
+                Vision</h2>
+            <p style="color: rgba(255,255,255,0.95); font-size: 1.2rem; line-height: 1.8; max-width: 800px; margin: 0 auto; text-align: center;"
+                data-translate="about.vision.text">
                 We envision a world where no girl misses school because of her period. Where menstruation is understood,
                 not stigmatized. Where every girl has access to the products, facilities, and education she needs to
                 manage her menstrual health with dignity and confidence.
@@ -142,16 +163,18 @@
     <section class="mission">
         <div class="container">
             <div class="mission-content">
-                <h2 class="section-title">Join Us in Creating Change</h2>
-                <p class="mission-text">
+                <h2 class="section-title" data-translate="about.join.title">Join Us in Creating Change</h2>
+                <p class="mission-text" data-translate="about.join.text">
                     Together, we can break down the barriers that prevent girls from reaching their full potential.
                     Whether you're an educator, researcher, advocate, or someone who cares about gender equality,
                     there's a role for you in this important work.
                 </p>
                 <div class="hero-buttons" style="margin-top: 30px;">
-                    <a href="contact.html" class="btn btn-primary">Get Involved</a>
+                    <a href="contact.html" class="btn btn-primary" data-translate="about.join.btnGetInvolved">Get
+                        Involved</a>
                     <a href="research.html" class="btn btn-primary"
-                        style="background: var(--primary-color); color: white;">Read Our Research</a>
+                        style="background: var(--primary-color); color: white;" data-translate="hero.btnResearch">Read
+                        Our Research</a>
                 </div>
             </div>
         </div>
@@ -197,6 +220,7 @@
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 

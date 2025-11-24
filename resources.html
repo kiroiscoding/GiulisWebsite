@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Links to organizations, reports, and educational resources on menstrual health">
     <title>Resources - Flow for Her</title>
+    <link rel="icon" type="image/png" href="Images/faviconFlowForHer.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Text:wght@400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Text:wght@400&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
@@ -22,13 +27,20 @@
                     <span></span>
                 </button>
                 <ul class="nav-links" id="nav-links">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="research.html" class="nav-link">Research</a></li>
-                    <li><a href="curriculum.html" class="nav-link">Curriculum</a></li>
-                    <li><a href="resources.html" class="nav-link active">Resources</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="index.html" class="nav-link" data-translate="nav.home">Home</a></li>
+                    <li><a href="about.html" class="nav-link" data-translate="nav.about">About</a></li>
+                    <li><a href="research.html" class="nav-link" data-translate="nav.research">Research</a></li>
+                    <li><a href="curriculum.html" class="nav-link" data-translate="nav.curriculum">Curriculum</a></li>
+                    <li><a href="resources.html" class="nav-link active" data-translate="nav.resources">Resources</a>
+                    </li>
+                    <li><a href="contact.html" class="nav-link" data-translate="nav.contact">Contact</a></li>
                 </ul>
+                <div class="language-toggle">
+                    <div class="lang-btn" id="lang-toggle">
+                        <button class="lang-option active" data-lang="en" onclick="setLanguage('en')">EN</button>
+                        <button class="lang-option" data-lang="ar" onclick="setLanguage('ar')">AR</button>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -36,8 +48,9 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1 class="page-title">Resources</h1>
-            <p class="page-subtitle">Organizations, research, and tools to support menstrual health education</p>
+            <h1 class="page-title" data-translate="resources.title">Resources</h1>
+            <p class="page-subtitle" data-translate="resources.subtitle">Organizations, research, and tools to support
+                menstrual health education</p>
         </div>
     </section>
 
@@ -50,7 +63,8 @@
                     <ul class="resource-list">
                         <li><a href="https://www.unicef.org/" target="_blank">UNICEF - Menstrual Health</a></li>
                         <li><a href="https://www.who.int/" target="_blank">WHO - Adolescent Health</a></li>
-                        <li><a href="https://www.daysinternational.org/" target="_blank">Days for Girls International</a></li>
+                        <li><a href="https://www.daysinternational.org/" target="_blank">Days for Girls
+                                International</a></li>
                         <li><a href="https://www.plan-international.org/" target="_blank">Plan International</a></li>
                         <li><a href="https://www.wateraid.org/" target="_blank">WaterAid</a></li>
                         <li><a href="https://www.wash-united.org/" target="_blank">WASH United</a></li>
@@ -149,11 +163,12 @@
         <div class="container">
             <h2 class="section-title">Regional Resources</h2>
             <p class="section-subtitle">Find region-specific information and organizations</p>
-            
+
             <div class="quick-links-grid" style="margin-top: 50px;">
                 <div class="impact-card">
                     <h3>🌍 Sub-Saharan Africa</h3>
-                    <p>Organizations and programs operating across East, West, Central, and Southern Africa focused on menstrual health.</p>
+                    <p>Organizations and programs operating across East, West, Central, and Southern Africa focused on
+                        menstrual health.</p>
                 </div>
                 <div class="impact-card">
                     <h3>🌏 South Asia</h3>
@@ -177,7 +192,9 @@
             <div class="mission-content">
                 <h2 class="section-title">Have a Resource to Share?</h2>
                 <p class="mission-text">
-                    If you know of valuable resources, organizations, or tools that should be included in this directory, please let us know. We're constantly updating our resource library to better serve educators and advocates worldwide.
+                    If you know of valuable resources, organizations, or tools that should be included in this
+                    directory, please let us know. We're constantly updating our resource library to better serve
+                    educators and advocates worldwide.
                 </p>
                 <div class="hero-buttons" style="margin-top: 30px;">
                     <a href="contact.html" class="btn btn-primary">Submit a Resource</a>
@@ -226,7 +243,8 @@
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>

@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free educational curriculum and teaching materials for menstrual health education">
+    <meta name="description"
+        content="Free educational curriculum and teaching materials for menstrual health education">
     <title>Educational Curriculum - Flow for Her</title>
+    <link rel="icon" type="image/png" href="Images/faviconFlowForHer.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Text:wght@400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Text:wght@400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
@@ -22,22 +29,31 @@
                     <span></span>
                 </button>
                 <ul class="nav-links" id="nav-links">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="research.html" class="nav-link">Research</a></li>
-                    <li><a href="curriculum.html" class="nav-link active">Curriculum</a></li>
-                    <li><a href="resources.html" class="nav-link">Resources</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="index.html" class="nav-link" data-translate="nav.home">Home</a></li>
+                    <li><a href="about.html" class="nav-link" data-translate="nav.about">About</a></li>
+                    <li><a href="research.html" class="nav-link" data-translate="nav.research">Research</a></li>
+                    <li><a href="curriculum.html" class="nav-link active" data-translate="nav.curriculum">Curriculum</a>
+                    </li>
+                    <li><a href="resources.html" class="nav-link" data-translate="nav.resources">Resources</a></li>
+                    <li><a href="contact.html" class="nav-link" data-translate="nav.contact">Contact</a></li>
                 </ul>
+                <div class="language-toggle">
+                    <div class="lang-btn" id="lang-toggle">
+                        <button class="lang-option active" data-lang="en" onclick="setLanguage('en')">EN</button>
+                        <button class="lang-option" data-lang="ar" onclick="setLanguage('ar')">AR</button>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <section class="page-header">
+    <section class="page-header curriculum-page-header">
+        <div class="page-header-overlay"></div>
         <div class="container">
-            <h1 class="page-title">Educational Curriculum</h1>
-            <p class="page-subtitle">Comprehensive teaching materials for educators, parents, and community leaders</p>
+            <h1 class="page-title" data-translate="curriculum.title">Educational Curriculum</h1>
+            <p class="page-subtitle" data-translate="curriculum.subtitle">Comprehensive teaching materials for
+                educators, parents, and community leaders</p>
         </div>
     </section>
 
@@ -51,7 +67,8 @@
                         <h3 class="module-title">Understanding Menstruation</h3>
                     </div>
                     <div class="module-content">
-                        <p class="module-description">Basic biology and physiology of the menstrual cycle, designed for ages 10-14.</p>
+                        <p class="module-description">Basic biology and physiology of the menstrual cycle, designed for
+                            ages 10-14.</p>
                         <ul class="module-topics">
                             <li>What is menstruation and why does it happen?</li>
                             <li>The menstrual cycle explained</li>
@@ -68,7 +85,8 @@
                         <h3 class="module-title">Menstrual Hygiene Management</h3>
                     </div>
                     <div class="module-content">
-                        <p class="module-description">Practical guidance on maintaining hygiene and health during menstruation.</p>
+                        <p class="module-description">Practical guidance on maintaining hygiene and health during
+                            menstruation.</p>
                         <ul class="module-topics">
                             <li>Choosing and using menstrual products</li>
                             <li>Proper hygiene practices</li>
@@ -85,7 +103,8 @@
                         <h3 class="module-title">Breaking Stigma & Building Confidence</h3>
                     </div>
                     <div class="module-content">
-                        <p class="module-description">Addressing cultural taboos and empowering girls to feel confident.</p>
+                        <p class="module-description">Addressing cultural taboos and empowering girls to feel confident.
+                        </p>
                         <ul class="module-topics">
                             <li>Understanding and challenging stigma</li>
                             <li>Building self-esteem and confidence</li>
@@ -96,22 +115,11 @@
                     </div>
                 </div>
 
-                <div class="curriculum-module">
-                    <div class="module-header">
-                        <div class="module-number">Module 4</div>
-                        <h3 class="module-title">For Educators & Parents</h3>
-                    </div>
-                    <div class="module-content">
-                        <p class="module-description">Guidance for adults on how to teach and support menstruating youth.</p>
-                        <ul class="module-topics">
-                            <li>Creating safe learning environments</li>
-                            <li>Age-appropriate communication strategies</li>
-                            <li>Supporting girls in crisis</li>
-                            <li>School policies and facilities</li>
-                        </ul>
-                        <a href="#" class="module-download">Download Module (PDF)</a>
-                    </div>
-                </div>
+                <!-- 
+                TO ADD MORE MODULES:
+                Copy the "curriculum-module" block above and paste it here.
+                Update the module-number, module-title, module-description, and module-topics.
+                -->
             </div>
         </div>
     </section>
@@ -122,19 +130,21 @@
             <h2 class="section-title">Additional Teaching Materials</h2>
             <div class="impact-grid" style="margin-top: 50px;">
                 <div class="impact-card">
-                    <h3>📊 Lesson Plans</h3>
-                    <p>Ready-to-use lesson plans for different age groups and classroom settings, complete with activities and assessment tools.</p>
+                    <h3><i class="fas fa-clipboard-list"></i> Lesson Plans</h3>
+                    <p>Ready-to-use lesson plans for different age groups and classroom settings, complete with
+                        activities and assessment tools.</p>
                 </div>
                 <div class="impact-card">
-                    <h3>🎨 Visual Aids</h3>
-                    <p>Downloadable posters, infographics, and diagrams to support learning and classroom decoration.</p>
+                    <h3><i class="fas fa-images"></i> Visual Aids</h3>
+                    <p>Downloadable posters, infographics, and diagrams to support learning and classroom decoration.
+                    </p>
                 </div>
                 <div class="impact-card">
-                    <h3>📝 Worksheets</h3>
+                    <h3><i class="fas fa-file-alt"></i> Worksheets</h3>
                     <p>Interactive worksheets and activities that reinforce learning and encourage discussion.</p>
                 </div>
                 <div class="impact-card">
-                    <h3>🎥 Video Series</h3>
+                    <h3><i class="fas fa-video"></i> Video Series</h3>
                     <p>Educational videos explaining menstrual health concepts in an accessible and engaging format.</p>
                 </div>
             </div>
@@ -146,41 +156,24 @@
         <div class="container">
             <div class="approach-grid">
                 <div class="approach-card">
-                    <div class="approach-number">📖</div>
+                    <div class="approach-number"><i class="fas fa-language"></i></div>
                     <h3>Multi-Language Support</h3>
                     <p>All materials are available in multiple languages and can be translated to meet local needs.</p>
                 </div>
-                
-                <div class="approach-card">
-                    <div class="approach-number">🌍</div>
-                    <h3>Cultural Adaptation</h3>
-                    <p>Our curriculum is designed to be adapted to different cultural contexts while maintaining core educational objectives.</p>
-                </div>
-                
-                <div class="approach-card">
-                    <div class="approach-number">♿</div>
-                    <h3>Accessibility</h3>
-                    <p>Materials designed with accessibility in mind, including large print versions and simplified language options.</p>
-                </div>
-                
-                <div class="approach-card">
-                    <div class="approach-number">💻</div>
-                    <h3>Digital & Print</h3>
-                    <p>All resources available in both digital and print-friendly formats to suit different teaching environments.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- CTA Section -->
-    <section class="stats">
-        <div class="container">
-            <h2 class="section-title" style="color: white; margin-bottom: 30px;">Need Custom Materials?</h2>
-            <p style="color: rgba(255,255,255,0.95); font-size: 1.2rem; line-height: 1.8; max-width: 800px; margin: 0 auto 30px; text-align: center;">
-                We can help develop customized educational materials for your specific community, school, or organization. Contact us to discuss your needs.
-            </p>
-            <div class="hero-buttons">
-                <a href="contact.html" class="btn btn-primary">Request Custom Materials</a>
+                <div class="approach-card">
+                    <div class="approach-number"><i class="fas fa-globe"></i></div>
+                    <h3>Cultural Adaptation</h3>
+                    <p>Our curriculum is designed to be adapted to different cultural contexts while maintaining core
+                        educational objectives.</p>
+                </div>
+
+                <div class="approach-card">
+                    <div class="approach-number"><i class="fas fa-universal-access"></i></div>
+                    <h3>Accessibility</h3>
+                    <p>Materials designed with accessibility in mind, including large print versions and simplified
+                        language options.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -225,7 +218,8 @@
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>

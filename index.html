@@ -7,6 +7,7 @@
     <meta name="description"
         content="Educational blog and resources about menstrual health challenges in developing countries">
     <title>Flow for Her - Menstrual Health Education</title>
+    <link rel="icon" type="image/png" href="Images/faviconFlowForHer.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,13 +31,19 @@
                     <span></span>
                 </button>
                 <ul class="nav-links" id="nav-links">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="research.html" class="nav-link">Research</a></li>
-                    <li><a href="curriculum.html" class="nav-link">Curriculum</a></li>
-                    <li><a href="resources.html" class="nav-link">Resources</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="index.html" class="nav-link active" data-translate="nav.home">Home</a></li>
+                    <li><a href="about.html" class="nav-link" data-translate="nav.about">About</a></li>
+                    <li><a href="research.html" class="nav-link" data-translate="nav.research">Research</a></li>
+                    <li><a href="curriculum.html" class="nav-link" data-translate="nav.curriculum">Curriculum</a></li>
+                    <li><a href="resources.html" class="nav-link" data-translate="nav.resources">Resources</a></li>
+                    <li><a href="contact.html" class="nav-link" data-translate="nav.contact">Contact</a></li>
                 </ul>
+                <div class="language-toggle">
+                    <div class="lang-btn" id="lang-toggle">
+                        <button class="lang-option active" data-lang="en" onclick="setLanguage('en')">EN</button>
+                        <button class="lang-option" data-lang="ar" onclick="setLanguage('ar')">AR</button>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -47,14 +54,16 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">Flow for Her</h1>
-                <p class="hero-subtitle">Empowering Girls Through Menstrual Health Education</p>
-                <p class="hero-description">
+                <p class="hero-subtitle" data-translate="hero.subtitle">Empowering Girls Through Menstrual Health
+                    Education</p>
+                <p class="hero-description" data-translate="hero.description">
                     Raising awareness about the challenges girls face during menstruation in developing countries and
                     providing educational resources to create lasting change.
                 </p>
                 <div class="hero-buttons">
-                    <a href="research.html" class="btn btn-primary">Read Our Research</a>
-                    <a href="curriculum.html" class="btn btn-secondary">Explore Curriculum</a>
+                    <a href="research.html" class="btn btn-primary" data-translate="hero.btnResearch">Read Research</a>
+                    <a href="curriculum.html" class="btn btn-secondary" data-translate="hero.btnCurriculum">Explore Our
+                        Curriculum</a>
                 </div>
             </div>
         </div>
@@ -64,15 +73,16 @@
     <section class="mission">
         <div class="container">
             <div class="mission-content">
-                <h2 class="section-title">Our Mission</h2>
-                <p class="mission-text">
+                <h2 class="section-title" data-translate="mission.title">Our Mission</h2>
+                <p class="mission-text" data-translate="mission.text">
                     Every girl deserves access to proper menstrual health education and resources. In many developing
                     countries, the lack of awareness, stigma, and inadequate facilities create significant barriers to
                     girls' education and well-being. Through research, education, and advocacy, we aim to break these
                     barriers and empower girls worldwide.
                 </p>
                 <div class="hero-buttons" style="margin-top: 30px;">
-                    <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+                    <a href="about.html" class="btn btn-primary" data-translate="mission.btnLearnMore">Learn More About
+                        Us</a>
                 </div>
             </div>
         </div>
@@ -84,19 +94,19 @@
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-number">500M+</div>
-                    <div class="stat-label">Girls lack access to menstrual products</div>
+                    <div class="stat-label" data-translate="stats.stat1">Girls lack access to menstrual products</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">1 in 10</div>
-                    <div class="stat-label">Girls miss school during menstruation</div>
+                    <div class="stat-label" data-translate="stats.stat2">Girls miss school during menstruation</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">50%</div>
-                    <div class="stat-label">Of schools lack adequate sanitation</div>
+                    <div class="stat-label" data-translate="stats.stat3">Of schools lack adequate sanitation</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">130M</div>
-                    <div class="stat-label">Girls out of school globally</div>
+                    <div class="stat-label" data-translate="stats.stat4">Girls out of school globally</div>
                 </div>
             </div>
         </div>
@@ -105,14 +115,15 @@
     <!-- Quick Links Section -->
     <section class="quick-links">
         <div class="container">
-            <h2 class="section-title">Explore Our Work</h2>
+            <h2 class="section-title" data-translate="quick.title">Explore Our Work</h2>
             <div class="quick-links-grid">
                 <a href="research.html" class="quick-link-card">
                     <div class="quick-link-icon">
                         <i class="fas fa-brain"></i>
                     </div>
-                    <h3>Research & Articles</h3>
-                    <p>In-depth studies on menstrual health challenges worldwide</p>
+                    <h3 data-translate="quick.research.title">Research & Articles</h3>
+                    <p data-translate="quick.research.desc">In-depth studies on menstrual health challenges worldwide
+                    </p>
                     <span class="link-arrow">→</span>
                 </a>
 
@@ -120,8 +131,8 @@
                     <div class="quick-link-icon">
                         <i class="fas fa-book"></i>
                     </div>
-                    <h3>Educational Curriculum</h3>
-                    <p>Comprehensive teaching materials and resources</p>
+                    <h3 data-translate="quick.curriculum.title">Educational Curriculum</h3>
+                    <p data-translate="quick.curriculum.desc">Comprehensive teaching materials and resources</p>
                     <span class="link-arrow">→</span>
                 </a>
 
@@ -133,8 +144,8 @@
                                 d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                         </svg>
                     </div>
-                    <h3>Resources</h3>
-                    <p>Organizations, reports, and helpful links</p>
+                    <h3 data-translate="quick.resources.title">Resources</h3>
+                    <p data-translate="quick.resources.desc">Organizations, reports, and helpful links</p>
                     <span class="link-arrow">→</span>
                 </a>
 
@@ -148,8 +159,8 @@
                                 stroke-linejoin="round" />
                         </svg>
                     </div>
-                    <h3>Get Involved</h3>
-                    <p>Contact us to collaborate</p>
+                    <h3 data-translate="quick.contact.title">Get Involved</h3>
+                    <p data-translate="quick.contact.desc">Contact us to collaborate</p>
                     <span class="link-arrow">→</span>
                 </a>
             </div>
@@ -197,6 +208,7 @@
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 

@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact Flow for Her - Get in touch to collaborate or learn more">
     <title>Contact Us - Flow for Her</title>
+    <link rel="icon" type="image/png" href="Images/faviconFlowForHer.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Text:wght@400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Text:wght@400&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
@@ -22,13 +27,19 @@
                     <span></span>
                 </button>
                 <ul class="nav-links" id="nav-links">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="research.html" class="nav-link">Research</a></li>
-                    <li><a href="curriculum.html" class="nav-link">Curriculum</a></li>
-                    <li><a href="resources.html" class="nav-link">Resources</a></li>
-                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <li><a href="index.html" class="nav-link" data-translate="nav.home">Home</a></li>
+                    <li><a href="about.html" class="nav-link" data-translate="nav.about">About</a></li>
+                    <li><a href="research.html" class="nav-link" data-translate="nav.research">Research</a></li>
+                    <li><a href="curriculum.html" class="nav-link" data-translate="nav.curriculum">Curriculum</a></li>
+                    <li><a href="resources.html" class="nav-link" data-translate="nav.resources">Resources</a></li>
+                    <li><a href="contact.html" class="nav-link active" data-translate="nav.contact">Contact</a></li>
                 </ul>
+                <div class="language-toggle">
+                    <div class="lang-btn" id="lang-toggle">
+                        <button class="lang-option active" data-lang="en" onclick="setLanguage('en')">EN</button>
+                        <button class="lang-option" data-lang="ar" onclick="setLanguage('ar')">AR</button>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -36,8 +47,9 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1 class="page-title">Get in Touch</h1>
-            <p class="page-subtitle">Have questions? Want to collaborate? We'd love to hear from you</p>
+            <h1 class="page-title" data-translate="contact.title">Get in Touch</h1>
+            <p class="page-subtitle" data-translate="contact.subtitle">Have questions? Want to collaborate? We'd love to
+                hear from you</p>
         </div>
     </section>
 
@@ -48,9 +60,10 @@
                 <div class="contact-info">
                     <h2 class="section-title" style="text-align: left;">Let's Work Together</h2>
                     <p>
-                        Have questions about our research? Want to collaborate? Need custom educational materials for your community? We'd love to hear from you.
+                        Have questions about our research? Want to collaborate? Need custom educational materials for
+                        your community? We'd love to hear from you.
                     </p>
-                    
+
                     <div class="contact-details">
                         <div class="contact-item">
                             <span class="contact-icon">📧</span>
@@ -78,7 +91,8 @@
                     <div style="margin-top: 40px; padding: 30px; background: var(--bg-light); border-radius: 15px;">
                         <h3 style="color: var(--primary-color); margin-bottom: 15px;">Response Time</h3>
                         <p style="color: var(--text-light); line-height: 1.7;">
-                            We typically respond to inquiries within 2-3 business days. For urgent matters, please indicate "URGENT" in your subject line.
+                            We typically respond to inquiries within 2-3 business days. For urgent matters, please
+                            indicate "URGENT" in your subject line.
                         </p>
                     </div>
                 </div>
@@ -151,26 +165,30 @@
     <section class="about">
         <div class="container">
             <h2 class="section-title">Frequently Asked Questions</h2>
-            
+
             <div class="approach-grid" style="margin-top: 50px;">
                 <div class="approach-card">
                     <h3>Can I use your materials for my organization?</h3>
-                    <p>Yes! Our educational materials are freely available for non-commercial educational and advocacy purposes. Please provide attribution when using our content.</p>
+                    <p>Yes! Our educational materials are freely available for non-commercial educational and advocacy
+                        purposes. Please provide attribution when using our content.</p>
                 </div>
-                
+
                 <div class="approach-card">
                     <h3>How can I translate materials into my language?</h3>
-                    <p>We welcome translations! Please contact us to discuss the process and ensure consistency with our educational objectives.</p>
+                    <p>We welcome translations! Please contact us to discuss the process and ensure consistency with our
+                        educational objectives.</p>
                 </div>
-                
+
                 <div class="approach-card">
                     <h3>Do you provide in-person training?</h3>
-                    <p>We can connect you with partner organizations that provide in-person training. Contact us to discuss your specific needs and location.</p>
+                    <p>We can connect you with partner organizations that provide in-person training. Contact us to
+                        discuss your specific needs and location.</p>
                 </div>
-                
+
                 <div class="approach-card">
                     <h3>How can I contribute to your research?</h3>
-                    <p>We welcome research collaborations. Please reach out with details about your work, methodology, and how you'd like to contribute.</p>
+                    <p>We welcome research collaborations. Please reach out with details about your work, methodology,
+                        and how you'd like to contribute.</p>
                 </div>
             </div>
         </div>
@@ -216,7 +234,8 @@
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>

@@ -98,8 +98,59 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 35px;
     align-items: center;
+    gap: 35px;
+}
+
+.language-toggle {
+    margin-left: 20px;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    background: var(--bg-light);
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    height: 36px;
+}
+
+.lang-btn .lang-option {
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    transition: all var(--transition-fast);
+    z-index: 1;
+    position: relative;
+    color: var(--primary-color);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.lang-btn .lang-option.active {
+    color: white;
+}
+
+.lang-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: var(--primary-color);
+    transition: all var(--transition-medium);
+    z-index: 0;
+}
+
+.lang-btn.active::before {
+    left: 50%;
 }
 
 .nav-link {
@@ -338,6 +389,16 @@ body {
     text-align: center;
 }
 
+/* Research page specific header */
+.research-page-header {
+    background: url('Images/Research.jpg') center center / cover no-repeat;
+}
+
+/* Curriculum page specific header */
+.curriculum-page-header {
+    background: url('Images/Curriculum.jpg') center center / cover no-repeat;
+}
+
 .page-header-overlay {
     position: absolute;
     top: 0;
@@ -434,6 +495,11 @@ section {
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
+    direction: ltr;
+}
+
+html[dir="rtl"] .stats-grid {
+    direction: ltr;
 }
 
 .stat-card {
@@ -447,12 +513,24 @@ section {
     font-weight: 700;
     margin-bottom: 10px;
     color: white;
+    direction: ltr;
+    text-align: center;
+    unicode-bidi: embed;
 }
 
 .stat-label {
     font-size: 1.1rem;
     opacity: 0.95;
     line-height: 1.5;
+}
+
+html[dir="rtl"] .stat-card {
+    direction: rtl;
+}
+
+html[dir="rtl"] .stat-number {
+    direction: ltr;
+    text-align: center;
 }
 
 /* ===================================
@@ -632,6 +710,12 @@ section {
     margin-bottom: 15px;
 }
 
+.approach-number i {
+    font-size: 3rem;
+    color: var(--primary-light);
+    opacity: 0.3;
+}
+
 .approach-card h3 {
     font-family: var(--font-display);
     font-size: 1.4rem;
@@ -650,6 +734,21 @@ section {
 
 .about {
     background: var(--bg-white);
+}
+
+.about .section-title {
+    color: var(--primary-color);
+}
+
+.reality-intro {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin: 30px 0 40px 0;
+    padding: 20px 0;
+    border-bottom: 3px solid var(--primary-color);
+    display: inline-block;
 }
 
 .challenge-list {
@@ -1252,6 +1351,39 @@ section {
     }
 }
 
+/* RTL Support for Arabic */
+html[dir="rtl"] {
+    direction: rtl;
+}
+
+/* Keep navbar always LTR regardless of page direction */
+.navbar,
+.nav-content,
+.nav-links,
+.language-toggle,
+.mobile-menu-toggle {
+    direction: ltr !important;
+}
+
+html[dir="rtl"] .hero-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .hero-subtitle {
+    border-left: none;
+    border-right: 4px solid white;
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+html[dir="rtl"] .hero-buttons {
+    justify-content: flex-start;
+}
+
+html[dir="rtl"] .mission-content .hero-buttons {
+    justify-content: center;
+}
+
 @media (max-width: 768px) {
     .nav-links {
         position: fixed;
@@ -1269,6 +1401,11 @@ section {
 
     .nav-links.active {
         transform: translateY(0);
+    }
+
+    .language-toggle {
+        margin-left: 0;
+        margin-top: 10px;
     }
 
     .mobile-menu-toggle {
